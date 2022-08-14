@@ -1,0 +1,211 @@
+/*Start Global Rules */
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto+Slab:wght@100;200;300;400;500;600;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*End Global Rules */
+body {
+  background: url(./images/44_8.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+header h1 {
+  color: white;
+  margin-top: 30px;
+  min-height: 20vh;
+}
+
+.container {
+  width: 40%;
+  max-height: 450px;
+  min-height: 66px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background: rgb(226 226 226 / 35%);
+  box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+  backdrop-filter: blur(5.7px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+}
+
+.form {
+  display: flex;
+  width: 95%;
+  margin: 10px 0px;
+}
+
+.form input {
+  border: 1px solid white;
+  outline: none;
+  padding: 8px;
+  background-color: transparent;
+}
+
+.form .input[type="text"] {
+  width: 100%;
+  border-radius: 7px 0px 0px 7px;
+}
+
+.form .add {
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #0093ff;
+  padding-left: 10px;
+  border-radius: 0px 7px 7px 0px;
+  transition: 0.3s;
+}
+
+.form .add:hover {
+  background-color: #0093ff;
+  color: white;
+}
+
+.todo-container {
+  width: 95%;
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+ul {
+  list-style: none;
+  line-height: 0px;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 7px;
+  margin-top: 5px;
+  height: 30px;
+  padding-left: 10px;
+  transition: 0.5s;
+}
+
+.first {
+  display: flex;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  height: 100%;
+}
+
+ul li button {
+  background: transparent;
+  border: none;
+
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+ul li button i {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 0.6rem;
+  position: relative;
+  z-index: -1;
+}
+
+ul li button.done {
+  width: 24px;
+  height: 100%;
+  border-radius: 0px 7px 0px 7px;
+  background-color: #8a8ecd;
+}
+
+button.correct i {
+  color: black;
+  font-size: 15px;
+  padding-right: 5px;
+}
+
+button.correct i.fas {
+  font-size: 15px;
+  padding-right: 5px;
+  color: rgb(0, 166, 0);
+}
+
+.right {
+  transform: scale(0.9);
+  opacity: 0.5;
+  text-decoration: line-through;
+  text-decoration-color: #00bc00;
+  color: darkgray;
+}
+
+.right .correct i {
+  color: #00bc00;
+}
+
+.rotate {
+  transform: scale(0.5) rotateY(90deg);
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.divImg {
+  width: 100%;
+  height: 310px;
+  background: white;
+  margin-top: 25px;
+  padding: 10px;
+  border: 2px solid #2196f3;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.divImg h1 {
+  height: 30px;
+  margin-top: 20px;
+}
+
+.divImg button {
+  padding: 5px 10px;
+  background: #2498f3;
+  color: white;
+  border: 1px solid black;
+  border-radius: 2px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.divImg button:hover {
+  transform: scale(1.2);
+  border: none;
+}
+
+img {
+  max-width: 100%;
+  width: 70%;
+  height: 200px;
+  margin-bottom: 6px;
+}
+
+.show {
+  transition: 5s;
+  transform: rotate(45deg);
+}
